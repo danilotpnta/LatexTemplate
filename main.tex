@@ -1,0 +1,72 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[english]{babel}
+\usepackage[dvinames]{xcolor}
+\usepackage[compact,small]{titlesec}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{marginnote}
+\usepackage[top=1.8cm, bottom=1.8cm, outer=1.8cm, inner=1.8cm, heightrounded, marginparwidth=2.5cm, marginparsep=0.5cm]{geometry}
+\usepackage{enumitem}
+\setlist{noitemsep,parsep=2pt}
+\newcommand{\highlight}[1]{\textcolor{kuleuven}{#1}}
+\usepackage{pythonhighlight}
+\usepackage{cleveref}
+\usepackage{graphicx}
+
+% ADDED FOR FORMATTING
+\usepackage{enumitem}
+\usepackage[colorinlistoftodos]{todonotes}
+
+% FOR BLIB
+\usepackage[sorting=none]{biblatex}
+\addbibresource{bibliography.bib} %Import the bibliography files
+
+
+\newcommand{\nextyear}{\advance\year by 1 \the\year\advance\year by -1}
+\newcommand{\thisyear}{\the\year}
+\newcommand{\deadlineCode}{December 31, \thisyear{} at 18:00 CET}
+\newcommand{\deadlineReport}{\deadlineCode}
+
+\newcommand{\ReplaceMe}[1]{{\color{blue}#1}}
+\newcommand{\RemoveMe}[1]{{\color{purple}#1}}
+
+\setlength{\parskip}{5pt}
+
+%opening
+\title{Title of Report}
+\author{Danilo Toapanta}
+
+\begin{document}
+\fontfamily{ppl}
+\selectfont{}
+
+\maketitle
+
+\section{Title of Section}
+
+\subsection{Tile of Subsection}
+
+\begin{enumerate}
+ \item 
+ \item 
+ \item 
+\end{enumerate}
+
+\begin{figure}[hbt]
+\centering
+    \includegraphics[height=15em]{figures/figure1.png}
+    \caption{Flow diagram of Algorithm.}
+    \label{flowChart}
+\end{figure}
+
+Citing a paper \cite{DanilosEssay}
+Inserting reference \ref{flowChart} 
+
+\clearpage
+\renewcommand*{\bibfont}{\small}
+\printbibliography
+
+\end{document}
